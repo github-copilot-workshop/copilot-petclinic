@@ -86,7 +86,7 @@ Using Copilot Chat & Inline Chat ask it to :
 
 </details>
 
-## 003- Testing the API
+## 004- Testing the API
 
 The class `APIController` is currently not tested. Go to the `src/test/java/org/springframework/samples/petclinic/api/` folder and create a new test class `ApiControllerTest.java`.
 
@@ -104,7 +104,7 @@ Use Copilot to generate the test class and the first test method.
 
 </details>
 
-## 004 - Understanding bug
+## 005 - Understanding bug
 
 The APIController class contains an existing endpoint `/pets/{name}` mapped by the method `getPetsByName`. This method is supposed to return a list of pets with a given name. 
 
@@ -130,7 +130,7 @@ The method is very basic. It does the jib but you should improve it by:
 
 </details>
 
-## 005 - Adding a new endpoint
+## 006 - Adding a new endpoint
 
 You for example that returns a list of pets for a given owner. The endpoint should be `/api/owners/{ownerId}/pets`.
 
