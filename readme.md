@@ -35,6 +35,7 @@ The project contains some exercises to learn how to use GitHub Copilot. You can 
 - [Adding new languages _(i18n)_](docs/001-internationalization.md)
 - [Creating and Testing REST Services](docs/002-building-a-rest-api.md)
 - [Working with SQL](docs/003-working-with-sql.md)
+- [Deploying the application](docs/004-deploying-the-application.md)
 
 
 ## License
