@@ -25,3 +25,11 @@ services:
       - POSTGRES_DB=petclinic
     profiles:
       - postgres
+
+  # add redis service using version 7 and map the default port and expose it to 7777
+  redis:
+    image: redis:7
+    ports:
+      - "7777:6379"
+    profiles:
+      - redis
