@@ -34,7 +34,7 @@ CREATE TABLE drugs (
 
 </details>
 
-## 002 - Adding a new Data
+## 002 - Adding new Data
 
 Save the `src/main/resources/db/h2/schema.sql`, and keep the file open, and open also the `src/main/resources/db/h2/data.sql` file.
 
@@ -65,7 +65,7 @@ INSERT INTO drugs (id, name, description, price) VALUES (10, 'Omeprazole', 'For 
 </details>
 
 
-## 003 - Add a new REST Endpoint
+## 003 - Adding a new REST Endpoint
 
 Open the API Controller `src/main/java/com/example/demo/api/ApiController.java` and add a new endpoint to get all drugs.
 
