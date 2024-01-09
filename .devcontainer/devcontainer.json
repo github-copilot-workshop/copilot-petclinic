@@ -22,7 +22,8 @@
 		"vscjava.vscode-java-pack",
 		"redhat.vscode-xml",
 		"vmware.vscode-boot-dev-pack",
-		"mhutchie.git-graph"
+		"mhutchie.git-graph",
+		"GitHub.copilot-chat"
 	],
 	"forwardPorts": [8080],
 	"settings": {
