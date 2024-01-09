@@ -51,3 +51,15 @@ INSERT INTO visits VALUES (default, 7, '2013-01-01', 'rabies shot');
 INSERT INTO visits VALUES (default, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits VALUES (default, 8, '2013-01-03', 'neutered');
 INSERT INTO visits VALUES (default, 7, '2013-01-04', 'spayed');
+
+
+INSERT INTO drugs (id, name, description, price) VALUES (1, 'Aspirin', 'Pain reliever', 5.00);
+INSERT INTO drugs (id, name, description, price) VALUES (2, 'Ibuprofen', 'Anti-inflammatory', 10.00);
+INSERT INTO drugs (id, name, description, price) VALUES (3, 'Paracetamol', 'Pain reliever', 3.00);
+INSERT INTO drugs (id, name, description, price) VALUES (4, 'Amoxicillin', 'Antibiotic', 15.00);
+INSERT INTO drugs (id, name, description, price) VALUES (5, 'Ciprofloxacin', 'Antibiotic', 20.00);
+INSERT INTO drugs (id, name, description, price) VALUES (6, 'Lisinopril', 'For high blood pressure', 25.00);
+INSERT INTO drugs (id, name, description, price) VALUES (7, 'Simvastatin', 'For high cholesterol', 30.00);
+INSERT INTO drugs (id, name, description, price) VALUES (8, 'Amlodipine', 'For high blood pressure', 35.00);
+INSERT INTO drugs (id, name, description, price) VALUES (9, 'Metformin', 'For type 2 diabetes', 40.00);
+INSERT INTO drugs (id, name, description, price) VALUES (10, 'Omeprazole', 'For acid reflux', 45.00);
