@@ -1,7 +1,7 @@
 
 # Internalization
 
-The Pet Clinic Application contains some locale files located in `src/main/resources/static/resources/messages` you can use Copilot to create new translations for the application.
+The PetClinic Application contains locale files located in `src/main/resources/static/resources/messages` you can use Copilot to create new translations for the application.
 
 ## Create a new translation
 
@@ -24,5 +24,7 @@ The Pet Clinic Application contains some locale files located in `src/main/resou
 
 </details>
 
-Note: The application itself does not use these files, they are only used for the documentation.
+---
+
+> Note: The application itself does not use these files, they are only used for the exercise.
 
