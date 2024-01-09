@@ -70,9 +70,52 @@ Open the `.github/workflows/maven-build.yml` file and use Copilot to add a new j
 1. Open the `.github/workflows/maven-build.yml` file
 2. Use Copilot to add a new job to build and push the image using `add a new job to build and publish the docker image to GitHub Packages`
 
+The new job looks like:
 
+```yaml
+  publish-docker:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Login to GitHub Packages
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/copilot-petclinic:${{ github.sha }}
+```
 
 </details>
 
 
+## 004 - Preparing the Kubernetes Deployment
 
+Now that you have a Dockerfile and a GitHub Actions workflow to build and push the image, you can use Copilot to create a Kubernetes deployment.
+
+<details>
+
+<summary>Possible Flow</summary>
+
+1. Open Copilot Chat and ask `@workspace how to create a Kubernetes deployment for the petclinic application using MySQL and Java app in 2 differents container on the same pod`
+
+This is just to get an idea about how Copilot can help you. The generated file is not perfect and you may have to tweak it to match your enterprise standards.
+</details>
+
+## Optional excercises
+
+In addition to what we have done so far, you can also use Copilot to:
+
+- Add new GitHub Actions Worflows to create a new Container Image when a new release is created
+- Add a new GitHub Actions Workflow to deploy the application to Kubernetes
+- Use GitHub Copilot to create Terraform files to prepare the Kubernetes cluster
