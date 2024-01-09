@@ -2,7 +2,7 @@
 
 The `src/main/java/org/springframework/samples/petclinic/api/ApiController.java` file contains the basis for a REST API. It is a Spring `@RestController` that exposes a few endpoints that return JSON data.
 
-The file as 2 endpoints:
+The file has 2 endpoints:
 
 - `/api/owners` - returns a list of owners
 - `/api/pets/{name}` - returns a list of pets with a given name
@@ -52,7 +52,7 @@ should return
 
 </details>
 
-## 003 - Improving the code
+## 002 - Improving the code
 
 ### Documenting the code
 
@@ -88,7 +88,7 @@ Using Copilot Chat & Inline Chat ask it to :
 
 </details>
 
-## 004- Testing the API
+## 003 - Testing the API
 
 The class `APIController` is currently not tested. Go to the `src/test/java/org/springframework/samples/petclinic/api/` folder and create a new test class `ApiControllerTest.java`.
 
@@ -106,11 +106,11 @@ Use Copilot to generate the test class and the first test method.
 
 </details>
 
-## 005 - Understanding bug
+## 004 - Understanding bug
 
 The APIController class contains an existing endpoint `/pets/{name}` mapped by the method `getPetsByName`. This method is supposed to return a list of pets with a given name. 
 
-The method is very basic. It does the jib but you should improve it by:
+The method is very basic. It does the job but you should improve it by:
 - checking if the code is safe (risk of sql injection)
 - fix the issue 
 - add try catch block to make it robust
@@ -122,28 +122,12 @@ The method is very basic. It does the jib but you should improve it by:
 
 <summary>Possible Flow</summary>
 
-1. Select the method and as Copilot Chat to `explain this`
-1. The explanation explains that the code but also mention that the code is not safe
+1. Select the method and ask Copilot Chat to `explain this`
+1. The explanation explains that code but also mentions that the code is not safe
 1. Look at the next question from Copilot chat
 1. Ask Copilot to fix this with a `place holder` variable
 1. Add a try catch block using Inline Chat
 1. Add a javadoc using Inline Chat
 1. When done, create a test for example asking `@workspace Add new test to check that the code is safe from sql injection using a drop table statement`
-
-</details>
-
-## 006 - Adding a new endpoint
-
-You for example that returns a list of pets for a given owner. The endpoint should be `/api/owners/{ownerId}/pets`.
-
-For this try to do it with the completion only and not the chat.
-
-<details>
-
-<summary>Possible Flow</summary>
-
-1. Position the cursor in the `ApiController.java` after the `getPetsByName` method.
-1. Press the Return key and let the magic happen
-1. Accept the completion with `Tab`
 
 </details>

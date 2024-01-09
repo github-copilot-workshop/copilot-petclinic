@@ -55,6 +55,8 @@ When the file is created:
 3. then ask `how to run the image`
 4. Use the icon to copy the command in the terminal
 
+> Tip 💡: Make sure you use Copilot if you face any errors while building and running the image. It will be able to help you ;)
+
 </details>
 
 
