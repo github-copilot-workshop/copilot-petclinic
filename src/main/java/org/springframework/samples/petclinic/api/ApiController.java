@@ -51,8 +51,8 @@ public class ApiController {
 	 * @param name the name of the pets to retrieve
 	 * @return a list of pets with the given name
 	 */
-	@RequestMapping(value = "/pets/{name}", produces = "application/json") 
-	public List<Map<String, Object>> getPetsByName(@PathVariable("name") String name) { 
+	@RequestMapping(value = "/pets/{name}", produces = "application/json")
+	public List<Map<String, Object>> getPetsByName(@PathVariable("name") String name) {
 		try {
 			List<Map<String, Object>> pets = jdbcTemplate // Query the database for pets
 															// with the given name
@@ -60,9 +60,22 @@ public class ApiController {
 			return pets; // Return the list of pets
 		}
 		catch (Exception e) {
-			System.out.println("Exception occurred: " + e.getMessage()); 
+			System.out.println("Exception occurred: " + e.getMessage());
 			e.printStackTrace(); // Print stack trace for the exception
 			return Collections.emptyList(); // Return an empty list if an exception occurs
+		}
+	}
+
+	@RequestMapping(value = "/drugs", produces = "application/json")
+	public List<Map<String, Object>> getDrugs() {
+		try {
+			List<Map<String, Object>> drugs = jdbcTemplate.queryForList("select * from drugs order by price");
+			return drugs;
+		}
+		catch (Exception e) {
+			System.out.println("Exception occurred: " + e.getMessage());
+			e.printStackTrace();
+			return Collections.emptyList();
 		}
 	}
 
