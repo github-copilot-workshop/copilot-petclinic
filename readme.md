@@ -37,6 +37,7 @@ The project contains some exercises to learn how to use GitHub Copilot. You can 
 - [Working with SQL](docs/003-working-with-sql.md)
 - [Deploying the application](docs/004-deploying-the-application.md)
 - [Generating Diagram from code](docs/005-generating-documentation.md)
+- [Formatting Test Data (CSV & JSON)](docs/006-formatting-sample-data.md)
 
 
 ## License
