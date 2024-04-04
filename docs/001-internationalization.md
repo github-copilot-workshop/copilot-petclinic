@@ -1,11 +1,11 @@
 
 # Internalization
 
-The PetClinic Application contains locale files located in `src/main/resources/static/resources/messages` you can use Copilot to create new translations for the application.
+The PetClinic Application contains locale files located in `src/main/resources/messages` you can use Copilot to create new translations for the application.
 
 ## Create a new translation
 
-1. Create a new file in `src/main/resources/static/resources/messages` with the name of the locale you want to translate to. For example `messages_fr.properties` for French.
+1. Create a new file in `src/main/resources/messages` with the name of the locale you want to translate to. For example `messages_fr.properties` for French.
 
 
 2. Use Copilot to translate the file.
