@@ -18,7 +18,7 @@ The PetClinic Application contains locale files located in `src/main/resources/s
 1. Create a new file for example `messages_fr.properties` or `messages_de.properties`
 2. Copy and paste the content from `messages.properties` into the new file
 3. Select all the content with `Ctrl + A` (or your mouse)
-4. Press `Comment + i`, or right click and select `Start Inline Chat`
+4. Press `Command + i`, or right click and select `Start Inline Chat`
 5. Type `Translate to French` or `Translate to German`
 6. Let the magic happen!
 
