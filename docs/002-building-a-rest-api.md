@@ -81,7 +81,6 @@ Using Copilot Chat & Inline Chat ask it to :
 
 <summary>Possible Flow</summary>
 
-</details>
 1. In Copilot Inline Chat you can for example ask `make this code more robust with a try catch bloc and deal with empty owner id`
 2. Select the function, and ask Copilot to `is this code safe?`
 3. See the response and apply the fix
@@ -90,7 +89,7 @@ Using Copilot Chat & Inline Chat ask it to :
 
 ## 003 - Testing the API
 
-The class `APIController` is currently not tested. Go to the `src/test/java/org/springframework/samples/petclinic/api/` folder and create a new test class `ApiControllerTest.java`.
+The class `APIController` is currently not tested. Go to the `src/test/java/org/springframework/samples/petclinic/` folder and create a new foler `api` and a new test class `ApiControllerTest.java`.
 
 Use Copilot to generate the test class and the first test method.
 
@@ -98,7 +97,6 @@ Use Copilot to generate the test class and the first test method.
 
 <summary>Possible Flow</summary>
 
-</details>
 1. Go in the `ApiControllerTest.java`
 2. Using the inline chat (ctrl + i) ask Copilot to `create a test for the api/owners endpoint same as the PetClinitIntegrationTest`
 3. Adapt the code if needed using Copilot (or not...)
