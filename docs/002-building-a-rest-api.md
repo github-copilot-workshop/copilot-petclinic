@@ -89,7 +89,7 @@ Using Copilot Chat & Inline Chat ask it to :
 
 ## 003 - Testing the API
 
-The class `APIController` is currently not tested. Go to the `src/test/java/org/springframework/samples/petclinic/api/` folder and create a new test class `ApiControllerTest.java`.
+The class `APIController` is currently not tested. Go to the `src/test/java/org/springframework/samples/petclinic/` folder and create a new foler `api` and a new test class `ApiControllerTest.java`.
 
 Use Copilot to generate the test class and the first test method.
 
